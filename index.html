@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Component CSS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <style>
+      :root {
+        --button-color: 1px;
+      }
+
+      body {
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      button {
+        border-width: var(--button-border-width);
+      }
+
+      x-form-2 {
+        --button-border-width: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <input type="text" required />
+      <button type="submit">form 1</button>
+    </form>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
